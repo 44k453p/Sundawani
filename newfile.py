@@ -99,10 +99,10 @@ def masuk():
 	os.system('clear')
 	print logo
 	print "\33[1;33m╔══════════════════════════════════════════╗"
-	print "\33[1;33m║[\033[1;31;1m01\033[37;96m]\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m02\033[37;96m]\033[37;1mLogin Menggunakan Token Facebook      \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m03\033[37;96m]\033[37;1mAmbil Token                           \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m00\033[37;96m]\033[37;1mKeluar                                \33[1;33m║"
+	print "\33[1;33m║[\033[1;31;1m01\33[1;33m]\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;33m║"
+	print "\33[1;33m║[\033[1;31;1m02\33[1;33m]\033[37;1mLogin Menggunakan Token Facebook      \33[1;33m║"
+	print "\33[1;33m║[\033[1;31;1m03\33[1;33m]\033[37;1mAmbil Token                           \33[1;33m║"
+	print "\33[1;33m║[\033[1;31;1m00\33[1;33m]\033[37;1mKeluar                                \33[1;33m║"
 	print "\33[1;33m╚══════════════════════════════════════════╝"
 	pilih_masuk()
 
