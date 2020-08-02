@@ -65,7 +65,10 @@ logo = """
 \ `--. | | | ||  \| || | | |/ /_\ \| |  | |/ /_\ \|  \| |  | |  
 \33[37;1m `--. \| | | || . ` || | | ||  _  || |/\| ||  _  || . ` |  | |  
 /\__/ /| |_| || |\  || |/ / | | | |\  /\  /| | | || |\  | _| |_ 
-\____/  \___/ \_| \_/|___/  \_| |_/ \/  \/ \_| |_/\_| \_/ \___/                                                                                                                                                                                           
+\____/  \___/ \_| \_/|___/  \_| |_/ \/  \/ \_| |_/\_| \_/ \___/   
+  \033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻"
+\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
+                                                                                                                                                                               
 \033[37;1mAuthor   : MASTER CYBER HACKER
 \033[37;1mRecode   : IAN DEWA SULTAN PRAWIRA
 \033[37;1mGithub   : https://github.com/44k453p
@@ -256,7 +259,8 @@ def menu():
 		keluar()
 	os.system("clear")
 	print logo
-	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
+
+	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
 
 	print "\033[1;97m[\033[1;91m✴\033[1;97m]\33[1;33m Nama Akun\033[1;91m     =>\033[37;1m "+nama
 	print "\033[1;97m[\033[1;91m✔\033[1;97m]\33[1;33m UID\033[1;91m           =>\033[37;1m "+id
@@ -298,10 +302,10 @@ def indo():
 	os.system('clear')
 	print logo
 	print "\33[1;33m╔═════════════•ೋೋ•═════════════╗"
-	print "\33[1;33m║\033[1;97m[\033[1;91m01\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari Daftar Teman\33[1;33m║"
-	print "\33[1;33m║\033[1;97m[\033[1;91m02\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari ID Publik   \33[1;33m║"
-	print "\33[1;33m║\033[1;97m[\033[1;91m03\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari File        \33[1;33m║"
-	print "\33[1;33m║\033[1;97m[\033[1;91m00\033[1;97m]\033[1;91m=>\033[37;1mKembali                \33[1;33m║"
+	print "\33[1;33m║\033[1;97m[\033[1;91m01\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari Daftar Teman \33[1;33m║"
+	print "\33[1;33m║\033[1;97m[\033[1;91m02\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari ID Publik    \33[1;33m║"
+	print "\33[1;33m║\033[1;97m[\033[1;91m03\033[1;97m]\033[1;91m=>\033[37;1mCrack Dari File         \33[1;33m║"
+	print "\33[1;33m║\033[1;97m[\033[1;91m00\033[1;97m]\033[1;91m=>\033[37;1mKembali                 \33[1;33m║"
 	print "\33[1;33m╚═════════════•ೋೋ•═════════════╝"
 	pilih_indo()
 
@@ -314,7 +318,8 @@ def pilih_indo():
 	elif teak =="1" or teak =="01":
 		os.system('clear')
 		print logo
-		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻"
+
+		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -323,7 +328,7 @@ def pilih_indo():
 		os.system('clear')
 		print logo
 
-		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"		
+		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"		
 	        idt = raw_input("\033[1;97m{\033[1;34m✔\033[1;97m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -344,7 +349,8 @@ def pilih_indo():
 		os.system('clear')
 		print logo
 		try:
-			print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻"
+
+			print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
 			idlist = raw_input('\033[1;97m{\033[1;93m?\033[1;97m} Nama File : ')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
@@ -367,7 +373,7 @@ def pilih_indo():
 	for o in titik:
 		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
 
-	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"	
+	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"	
 	
 ##### MAIN INDONESIA #####
 	def main(arg):
