@@ -371,7 +371,9 @@ def pilih_indo():
 	print('\033[1;97m{\033[1;93m➹\033[1;97m} Stop CTRL+Z')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)"
+		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
+
+
 
 	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"	
 	
