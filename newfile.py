@@ -66,8 +66,8 @@ logo = """
 \33[37;1m `--. \| | | || . ` || | | ||  _  || |/\| ||  _  || . ` |  | |  
 /\__/ /| |_| || |\  || |/ / | | | |\  /\  /| | | || |\  | _| |_ 
 \____/  \___/ \_| \_/|___/  \_| |_/ \/  \/ \_| |_/\_| \_/ \___/   
-  \033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻"
-\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
+               \033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻
+             \033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻
                                                                                                                                                                                
 \033[37;1mAuthor   : MASTER CYBER HACKER
 \033[37;1mRecode   : IAN DEWA SULTAN PRAWIRA
@@ -186,7 +186,7 @@ def login():
 def tokenz():
 	os.system('clear')
 	print logo
-	toket = raw_input("\033[1;97m[\033[1;95m?\033[1;97m] \033[1;93mToken : \033[1;96m")
+	toket = raw_input("\033[1;97m[\033[1;91m?\033[1;97m] \033[1;93mToken : \33[1;33m")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -194,7 +194,7 @@ def tokenz():
 		zedd = open("login.txt", 'w')
 		zedd.write(toket)
 		zedd.close()
-		print '\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;92m Login Berhasil'
+		print '\033[1;97m[\033[1;91m✓\033[1;97m]\033[1;33m Login Berhasil'
 		os.system('xdg-open https://www.facebook.com/IANDEWASULTANPRAWIRA ')
 		bot_komen()
 	except KeyError:
@@ -260,7 +260,7 @@ def menu():
 	os.system("clear")
 	print logo
 
-	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
+	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCRACK INDONESIA\033[1;97m◀═════╾━╤デ╦︻"
 
 	print "\033[1;97m[\033[1;91m✴\033[1;97m]\33[1;33m Nama Akun\033[1;91m     =>\033[37;1m "+nama
 	print "\033[1;97m[\033[1;91m✔\033[1;97m]\33[1;33m UID\033[1;91m           =>\033[37;1m "+id
@@ -371,7 +371,7 @@ def pilih_indo():
 	print('\033[1;97m{\033[1;93m➹\033[1;97m} Stop CTRL+Z')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)"
 
 	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"	
 	
