@@ -257,7 +257,7 @@ def menu():
 		keluar()
 	os.system("clear")
 	print logo
-	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻
+	print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
 	print "\033[1;97m[\033[1;91m✴\033[1;97m]\33[1;33m Nama Akun\033[1;91m     =>\033[37;1m "+nama
 	print "\033[1;97m[\033[1;91m✔\033[1;97m]\33[1;33m UID\033[1;91m           =>\033[37;1m "+id
 	print "\033[1;97m[\033[1;91m+\033[1;97m]\33[1;33m Tanggal Lahir\033[1;91m =>\033[37;1m "+ a['birthday']
