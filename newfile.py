@@ -69,10 +69,10 @@ logo = """
                \033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻
              \033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻
                                                                                                                                                                                
-\33[1;91mAuthor   \33[1;33m: \033[92mMASTER CYBER HACKER
-\33[1;91mRecode   \33[1;33m: \033[92mIAN DEWA SULTAN PRAWIRA
-\33[1;91mGithub   \33[1;33m: \033[92mhttps://github.com/44k453p
-\33[1;91mFacebook \33[1;33m: \033[92mhttps://www.facebook.com/IANDEWASULTANPRAWIRA
+\33[1;91mAuthor   \33[1;33m: \033[97mMASTER CYBER HACKER
+\33[1;91mRecode   \33[1;33m: \033[97mIAN DEWA SULTAN PRAWIRA
+\33[1;91mGithub   \33[1;33m: \033[97mhttps://github.com/44k453p
+\33[1;91mFacebook \33[1;33m: \033[97mhttps://www.facebook.com/IANDEWASULTANPRAWIRA
 """
 
 def tik():
@@ -103,10 +103,10 @@ def masuk():
 	os.system('clear')
 	print logo
 	print "\33[1;33m╔══════════════════════════════════════════╗"
-	print "\33[1;33m║[\033[1;31;1m01\33[1;33m]\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m02\33[1;33m]\033[37;1mLogin Menggunakan Token Facebook      \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m03\33[1;33m]\033[37;1mAmbil Token                           \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m00\33[1;33m]\033[37;1mKeluar                                \33[1;33m║"
+	print "\33[1;33m║\33[1;97m[\33[1;91m01\33[1;37m]\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;33m║"
+	print "\33[1;33m║\33[1;97m[\33[1;91m02\33[1;37m]\033[37;1mLogin Menggunakan Token Facebook      \33[1;33m║"
+	print "\33[1;33m║\33[1;97m[\33[1;91m03\33[1;37m]\033[37;1mAmbil Token                           \33[1;33m║"
+	print "\33[1;33m║\33[1;97m[\33[1;91m00\33[1;37m]\033[37;1mKeluar                                \33[1;33m║"
 	print "\33[1;33m╚══════════════════════════════════════════╝"
 	pilih_masuk()
 
