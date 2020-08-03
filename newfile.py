@@ -69,10 +69,10 @@ logo = """
                \033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻
              \033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻
                                                                                                                                                                                
-\033[37;1mAuthor   : \033[92mMASTER CYBER HACKER
-\033[37;1mRecode   : \033[92mIAN DEWA SULTAN PRAWIRA
-\033[37;1mGithub   : \033[92mhttps://github.com/44k453p
-\033[37;1mFacebook : \033[92mhttps://www.facebook.com/IANDEWASULTANPRAWIRA
+\33[1;91mAuthor   \33[1;33m: \033[92mMASTER CYBER HACKER
+\33[1;91mRecode   \33[1;33m: \033[92mIAN DEWA SULTAN PRAWIRA
+\33[1;91mGithub   \33[1;33m: \033[92mhttps://github.com/44k453p
+\33[1;91mFacebook \33[1;33m: \033[92mhttps://www.facebook.com/IANDEWASULTANPRAWIRA
 """
 
 def tik():
@@ -329,11 +329,11 @@ def pilih_indo():
 		print logo
 
 		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"		
-	        idt = raw_input("\033[1;97m{\033[1;91m✔\033[1;97m} \33[1;33mID publik/teman \33[1;91m: ")
+	        idt = raw_input("\033[1;97m{\033[1;91m✔\033[1;97m} \33[1;33mID publik/teman \33[1;91m: \33[1;97m")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;97m{\033[1;91m✴\033[1;97m} \33[1;33mNama : "+op["name"]
+			print"\033[1;97m{\033[1;91m✴\033[1;97m} \33[1;33mNama \33[1;91m: \33[1;97m"+op["name"]
 		except KeyError:
 			print"\033[1;97m[\033[1;93m!\033[1;97m] ID publik/teman tidak ada !"
 			raw_input("\n[ Kembali ]")
@@ -367,11 +367,11 @@ def pilih_indo():
 		print"\033[1;97m[\033[1;91m!\033[1;97m]\033[1;97m Isi Yg Benar !"
 		pilih_indo()
 	
-	print "\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mTotal ID : "+str(len(id))
-	print('\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mStop CTRL+Z')
+	print "\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mTotal ID \33[1;91m: \33[1;97m"+str(len(id))
+	print('\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mStop \33[1;97mCTRL+Z')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mCrack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mCrack \33[1;97mBerjalan "+o),;sys.stdout.flush();time.sleep(1)
 
 	print "\n\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"	
 	
