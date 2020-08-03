@@ -329,11 +329,11 @@ def pilih_indo():
 		print logo
 
 		print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"		
-	        idt = raw_input("\033[1;97m{\033[1;34m✔\033[1;97m} ID publik/teman : ")
+	        idt = raw_input("\033[1;97m{\033[1;91m✔\033[1;97m} \33[1;33mID publik/teman \33[1;91m: ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;97m{\033[1;93m✴\033[1;97m} Nama : "+op["name"]
+			print"\033[1;97m{\033[1;91m✴\033[1;97m} \33[1;33mNama : "+op["name"]
 		except KeyError:
 			print"\033[1;97m[\033[1;93m!\033[1;97m] ID publik/teman tidak ada !"
 			raw_input("\n[ Kembali ]")
@@ -351,7 +351,7 @@ def pilih_indo():
 		try:
 
 			print "\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"
-			idlist = raw_input('\033[1;97m{\033[1;93m?\033[1;97m} Nama File : ')
+			idlist = raw_input('\033[1;97m{\033[1;91m?\033[1;97m} Nama File : ')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
 		except KeyError:
@@ -367,11 +367,11 @@ def pilih_indo():
 		print"\033[1;97m[\033[1;91m!\033[1;97m]\033[1;97m Isi Yg Benar !"
 		pilih_indo()
 	
-	print "\033[1;97m{\033[1;93m➹\033[1;97m} Total ID : "+str(len(id))
-	print('\033[1;97m{\033[1;93m➹\033[1;97m} Stop CTRL+Z')
+	print "\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mTotal ID : "+str(len(id))
+	print('\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mStop CTRL+Z')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;97m{\033[1;91m➹\033[1;97m} \33[1;33mCrack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
 
 	print "\n\033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER SUNDAWANI\033[1;97m◀═════╾━╤デ╦︻"	
 	
