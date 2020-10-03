@@ -69,10 +69,10 @@ logo = """
                \033[1;91m︻╦デ╤╾━════════════▶\033[1;97m◀═══════════╾━╤デ╦︻
              \033[1;91m︻╦デ╤╾━════════════▶\033[1;97m◀═══════════╾━╤デ╦︻
                                                                                                                                                                                
-\33[1;91mAuthor   \33[1;33m: \e[0;36mMASTER CYBER HACKER
-\33[1;91mRecode   \33[1;33m: \e[0;36mIAN DEWA SULTAN PRAWIRA
-\33[1;91mGithub   \33[1;33m: \e[0;36mhttps://github.com/44k453p
-\33[1;91mFacebook \33[1;33m: \e[0;36mhttps://www.facebook.com/profile.php?id=100009218573546
+\33[1;91mAuthor   \33[1;33m: \33[0;36mMASTER CYBER HACKER
+\33[1;91mRecode   \33[1;33m: \33[0;36mIAN DEWA SULTAN PRAWIRA
+\33[1;91mGithub   \33[1;33m: \33[0;36mhttps://github.com/44k453p
+\33[1;91mFacebook \33[1;33m: \33[0;36mhttps://www.facebook.com/profile.php?id=100009218573546
 
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -659,7 +659,7 @@ def pilih_indo():
 	print '\033[1;97m[\033[1;93m➹\033[1;97m] \033[1;97mCP file tersimpan : out/ind1.txt'
 	print "\033[1;97m◀═════╾━╤デ╦︻"
 	raw_input("\033[1;93m[\033[1;97m Kembali \033[1;93m]")
-	os.system("python2 Sundawani.py")
+	os.system("python2 newfile.py")
 	
 
 	
