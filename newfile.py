@@ -71,9 +71,9 @@ logo = """
 ║║║║║║     ─║║─     ║║─╔╗     ─║║─     ──║║──     ║╚═╝║     ║║╚╗║║──
 ║║║║║║     ╔╣─╗     ║╚═╝║     ╔╣─╗     ──║║──     ║╔═╗║     ║║─║║║──
 ╚╝╚╝╚╝     ╚══╝     ╚═══╝     ╚══╝     ──╚╝──     ╚╝─╚╝     ╚╝─╚═╝──                                                                                                                                                                                                                                                                                            
-\033[36;1mGithub   \033[31;1m: \033[33;1mhttps://github.com/44k453p
-\033[36;1mRecode   \033[31;1m: \033[33;1m44_K453P
-\033[36;1mFacebook \033[31;1m: \033[33;1mhttps://www.facebook.com/44K453P.404
+\033[37;1mGithub   \033[31;1m: \033[33;1mhttps://github.com/44k453p
+\033[37;1mRecode   \033[31;1m: \033[33;1m44_K453P
+\033[37;1mFacebook \033[31;1m: \033[33;1mhttps://www.facebook.com/44K453P.404
 """
 
 def tik():
@@ -187,7 +187,7 @@ def login():
 def tokenz():
 	os.system('clear')
 	print logo
-	toket = raw_input("\033[1;97m[\033[1;95m?\033[1;97m] \033[1;93mToken : \033[1;96m")
+	toket = raw_input("\033[1;97m[\033[1;96m?\033[1;97m] \033[1;93mToken : \033[1;96m")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -266,8 +266,8 @@ def menu():
 	print "\033[1;36m[\033[1;33m✔\033[1;36m]\033[1;33m UID\033[1;36m           =>\033[1;33m "+id
 	print "\033[1;36m[\033[1;33m✔\033[1;36m]\033[1;33m Tanggal Lahir\033[1;36m =>\033[1;33m "+ a['birthday']
 	print "\033[36;1m╔═════════════════════════╗"
-	print "\033[36;1m║[\033[1;31;1m01\033[37;96m]\033[1;31;1m->\033[33;1mCrack ID Indonesia \033[36;1m║"
-	print "\033[36;1m║[\033[1;31;1m02\033[37;96m]\033[1;31;1m->\033[33;1mKeluar             \033[36;2m║"
+	print "\033[36;1m║[\033[1;33;1m01\033[37;96m]\033[1;36;1m=>\033[33;1mCrack ID Indonesia \033[36;1m║"
+	print "\033[36;1m║[\033[1;33;1m02\033[37;96m]\033[1;36;1m=>\033[33;1mKeluar             \033[36;2m║"
 	print "\033[36;1m╚═════════════════════════╝"
 	pilih()
 	
@@ -301,17 +301,17 @@ def indo():
 		keluar()
 	os.system('clear')
 	print logo
-	print "\033[37;96m╔══════════════════════════════╗"
-	print "\033[37;96m║\033[1;34m[01]\033[1;31;1m->\033[37;1mCrack Dari Daftar Teman \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[02]\033[1;31;1m->\033[37;1mCrack Dari ID Publik    \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[03]\033[1;31;1m->\033[37;1mCrack Dari File         \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[00]\033[1;31;1m->\033[37;1mKembali                 \033[37;96m║"
-	print "\033[37;96m╚══════════════════════════════╝"
+	print "\033[36;1m╔══════════════════════════════╗"
+	print "\033[36;1m║\033[36;1m[\033[33;1m01\033[36;1m]\033[1;36;1m=>\033[33;1mCrack Dari Daftar Teman \033[36;1m║"
+	print "\033[36;1m║\033[36;1m[\033[33;1m02\033[36;1m]\033[1;36;1m=>\033[33;1mCrack Dari ID Publik    \033[36;1m║"
+	print "\033[36;1m║\033[36;1m[\033[33;1m03\033[36;1m]\033[1;36;1m=>\033[33;1mCrack Dari File         \033[36;1m║"
+	print "\033[36;1m║\033[36;1m[\033[33;1m00\033[36;1m]\033[1;36;1m=>\033[33;1mKembali                 \033[36;1m║"
+	print "\033[36;1m╚══════════════════════════════╝"
 	pilih_indo()
 
 #### PILIH INDO ####
 def pilih_indo():
-	teak = raw_input("\033[1;93m▄︻̷̿┻̿═━一 \033[91m:\033[1;96m ")
+	teak = raw_input("\033[33;1m▄︻̷̿┻̿═━一 \033[97m:\033[1;96m ")
 	if teak =="":
 		print"\033[1;97m[\033[1;91m!\033[1;97m]\033[1;97m Isi Yg Benar !"
 		pilih_indo()
@@ -326,9 +326,9 @@ def pilih_indo():
 	elif teak =="2" or teak =="02":
 		os.system('clear')
 		print logo
-		print "\033[1;31;1m=========================================="
-		print "\033[37;1m=========================================="
-	        idt = raw_input("\033[1;97m{\033[1;34m✔\033[1;97m} ID publik/teman : ")
+		print "\033[31;1m︻╦デ╤╾━══════▶KAMVRET◀═════╾━╤デ╦︻""
+		print "\033[37;1m︻╦デ╤╾━══════▶MILITAN◀═════╾━╤デ╦︻""
+	        idt = raw_input("\033[36;1m{\033[33;1m✔\033[36;1m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
